@@ -7,20 +7,28 @@ $(document).ready(function() {
       var width = $("#input_width").val();
 
       for (var i = 0; i < height; i++) {
-         $("#pixel_canvas").append("<tr><tr>");
+         $("#pixel_canvas").append("<tr></tr>");
       }
 
-      for (var j = 0; i < width; i++) {
-         $("tr").each(function() {
-            $(this).append("<td> </td>");
-         });
-      }
+      $("tr").each(function() {
+         for (var j = 0; j < width; j++) {
+            $(this).append("<td class='bkColor'></td>");
+         }
+      });
    }
 
 
    $("#sizePicker").on("submit", function(evt) {
+      $("#pixel_canvas").empty();
       makeGrid();
       evt.preventDefault();
+   });
+
+
+   table.on("click", "td", function() {
+      var color = $("#colorPicker").val();
+      $(".bkColor").css("background-color", color);
+      $(this).toggleClass("bkColor");
    });
 
 
