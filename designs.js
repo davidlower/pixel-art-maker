@@ -25,7 +25,7 @@ $(document).ready(function() {
    });
 
 
-   table.on("click", "td", function() {
+   $("td").on("click", function() {
       var color = $("#colorPicker").val();
       $(".bkColor").css("background-color", color);
       $(this).toggleClass("bkColor");
