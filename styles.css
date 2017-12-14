@@ -29,7 +29,7 @@ table, tr, td {
 
 table {
    border-collapse: collapse;
-   margin: 0 auto;
+   margin: 0 auto 100px auto;
 }
 
 tr {
@@ -67,3 +67,8 @@ input::placeholder {
    color: #041a26;
    transition: background-color 0.25s ease-out;
 }
+
+/*.inActive {
+   background-color: white;
+   border: 1px solid #f9a11b;
+}*/

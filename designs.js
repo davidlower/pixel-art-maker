@@ -12,8 +12,13 @@ $(document).ready(function() {
 
       $("tr").each(function() {
          for (var j = 0; j < width; j++) {
-            $(this).append("<td class='bkColor'></td>");
+            $(this).append("<td class='inActive'></td>");
          }
+      });
+
+      $("td").on("click", function() {
+         var color = $("#colorPicker").val();
+         $(this).css("background-color", color);
       });
    }
 
@@ -25,13 +30,4 @@ $(document).ready(function() {
    });
 
 
-   $("td").on("click", function() {
-      var color = $("#colorPicker").val();
-      $(".bkColor").css("background-color", color);
-      $(this).toggleClass("bkColor");
-   });
-
-
 });
-
-// testing
