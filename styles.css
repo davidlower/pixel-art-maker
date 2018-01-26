@@ -16,20 +16,20 @@ html {
 }
 
 h1 {
-   margin: 4% auto 2.5%;
+   margin: 10% auto 5%;
 
    font-family: Monoton;
    font-size: 5.4rem;
 }
 
 h2 {
-   margin: 2.5% auto 0.8%;
+   margin: 5% auto 2%;
 
    font-size: 2rem;
 }
 
 table {
-   margin: 0 auto 4%;
+   margin: 0 auto 10%;
 
    border-collapse: collapse;
 }
