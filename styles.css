@@ -16,14 +16,14 @@ html {
 }
 
 h1 {
-   margin: 100px auto 5%;
+   margin: 100px auto 0;
 
    font-family: Monoton;
    font-size: 5.4rem;
 }
 
 h2 {
-   margin: 75px auto 2%;
+   margin: 50px auto 25px;
 
    font-size: 2rem;
 }
